@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="EcoAlert: registro de problemas ambientais em Curitiba por usuários cadastrados.">
+  <meta name="theme-color" content="#1b7a43">
+  <title>EcoAlert | EcoSpot + EcoAlert</title>
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="ecoalert">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.svg" alt="" width="36" height="36">
+        <span>EcoSpot <span class="brand__plus">+</span> EcoAlert</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+        <ul class="main-nav__list">
+          <li><a class="main-nav__link" data-nav="home" href="index.html">Início</a></li>
+          <li><a class="main-nav__link" data-nav="ecospot" href="ecospot.html">EcoSpot</a></li>
+          <li><a class="main-nav__link" data-nav="ecoalert" href="ecoalert.html" aria-current="page">EcoAlert</a></li>
+          <li><a class="main-nav__link" data-nav="conta" href="login.php" data-auth-link>Entrar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <section class="page-hero page-hero--alert" aria-labelledby="page-title">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está aqui">
+          <ol>
+            <li><a href="index.html">Início</a></li>
+            <li aria-current="page">EcoAlert</li>
+          </ol>
+        </nav>
+        <span class="eyebrow eyebrow--alert">Problemas ambientais</span>
+        <h1 id="page-title">EcoAlert</h1>
+        <p>O EcoAlert permitirá que usuários cadastrados registrem problemas ambientais em Curitiba, contribuindo para identificar situações que precisam de atenção.</p>
+        <div class="btn-group">
+          <a class="btn btn--alert" href="#tipos">Ver tipos de ocorrência</a>
+          <a class="btn btn--outline" href="ecospot.html">Consultar o mapa no EcoSpot</a>
+        </div>
+        <p class="auth-note">Para registrar uma ocorrência, será necessário ter uma conta e estar conectado. <a href="cadastro.php">Criar conta</a> ou <a href="login.php">entrar</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="emergencia-title">
+      <div class="container">
+        <div class="notice notice--alert" role="note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+          <div>
+            <h2 id="emergencia-title" class="visually-hidden">Situações de emergência</h2>
+            <p><strong>O EcoAlert não substitui os serviços de emergência.</strong> Em caso de incêndio ou risco imediato a pessoas, ligue <a href="tel:193">193 (Corpo de Bombeiros)</a>.</p>
+            <p>O EcoAlert não é um canal oficial da Prefeitura de Curitiba. Para solicitações oficiais ao município, utilize a <a href="tel:156">Central 156</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tipos" class="section section--alt" aria-labelledby="tipos-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow eyebrow--alert">O que poderá ser registrado</span>
+          <h2 id="tipos-title">Tipos de ocorrência previstos</h2>
+          <p>Categorias que poderão ser escolhidas ao registrar uma ocorrência.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card card--alert">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+            </div>
+            <h3>Descarte irregular de lixo</h3>
+            <p>Lixo doméstico ou resíduos deixados em terrenos, calçadas ou áreas verdes.</p>
+          </article>
+          <article class="card card--alert">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="13" width="8" height="8" rx="1"/><rect x="14" y="13" width="8" height="8" rx="1"/><rect x="8" y="5" width="8" height="8" rx="1"/></svg>
+            </div>
+            <h3>Entulho e restos de obra</h3>
+            <p>Materiais de construção abandonados em vias públicas ou terrenos.</p>
+          </article>
+          <article class="card card--alert">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.4-.5-2-1-3-1.1-2.1-.2-4 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.2.4-2.3 1-3.3.3 1.4 1.2 2.8 2.5 2.8z"/></svg>
+            </div>
+            <h3>Queimadas</h3>
+            <p>Queima de lixo ou de vegetação observada na cidade.</p>
+          </article>
+          <article class="card card--alert">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg>
+            </div>
+            <h3>Poluição de rios e córregos</h3>
+            <p>Resíduos, espuma, mau cheiro ou mudança de cor na água.</p>
+          </article>
+          <article class="card card--alert">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-7"/><path d="M9 9a3 3 0 1 1 6 0"/><path d="M7 15h10l-2-6H9z"/><path d="m4 4 16 16"/></svg>
+            </div>
+            <h3>Danos à vegetação</h3>
+            <p>Corte de árvores, desmatamento ou destruição de áreas verdes.</p>
+          </article>
+          <article class="card card--alert">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h.01"/><path d="M12 12h.01"/><path d="M16 12h.01"/></svg>
+            </div>
+            <h3>Outros problemas</h3>
+            <p>Qualquer outra situação ambiental que precise de atenção.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="como-registrar-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow eyebrow--alert">Em breve</span>
+          <h2 id="como-registrar-title">Como o registro vai funcionar</h2>
+          <p>O registro de ocorrências está em desenvolvimento. Você já pode criar sua conta; em breve, usuários cadastrados poderão registrar ocorrências seguindo estas etapas.</p>
+        </div>
+        <ol class="steps steps--alert grid grid--4">
+          <li class="card">
+            <h3>Entrar na conta</h3>
+            <p>Criar uma conta ou fazer login. O registro de ocorrências é exclusivo para usuários autenticados.</p>
+          </li>
+          <li class="card">
+            <h3>Escolher o tipo</h3>
+            <p>Selecionar a categoria do problema ambiental observado.</p>
+          </li>
+          <li class="card">
+            <h3>Informar o local</h3>
+            <p>Indicar o endereço ou ponto de referência da ocorrência.</p>
+          </li>
+          <li class="card">
+            <h3>Descrever e enviar</h3>
+            <p>Adicionar uma descrição e enviar o registro para a plataforma.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <p><strong>EcoSpot + EcoAlert</strong></p>
+          <p>Plataforma de consulta a pontos sustentáveis e registro de problemas ambientais em Curitiba (PR).</p>
+        </div>
+        <nav class="site-footer__nav" aria-label="Navegação do rodapé">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="ecospot.html">EcoSpot</a></li>
+            <li><a href="ecoalert.html">EcoAlert</a></li>
+            <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="site-footer__bottom">© <span data-current-year>2026</span> EcoSpot + EcoAlert · Projeto acadêmico desenvolvido por estudantes da PUCPR. Sem vínculo oficial com a Prefeitura de Curitiba.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+</body>
+</html>

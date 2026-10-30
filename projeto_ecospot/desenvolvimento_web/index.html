@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="EcoSpot + EcoAlert: consulte pontos sustentáveis e acompanhe o registro de problemas ambientais em Curitiba.">
+  <meta name="theme-color" content="#1b7a43">
+  <title>EcoSpot + EcoAlert | Início</title>
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.svg" alt="" width="36" height="36">
+        <span>EcoSpot <span class="brand__plus">+</span> EcoAlert</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+        <ul class="main-nav__list">
+          <li><a class="main-nav__link" data-nav="home" href="index.html" aria-current="page">Início</a></li>
+          <li><a class="main-nav__link" data-nav="ecospot" href="ecospot.html">EcoSpot</a></li>
+          <li><a class="main-nav__link" data-nav="ecoalert" href="ecoalert.html">EcoAlert</a></li>
+          <li><a class="main-nav__link" data-nav="conta" href="login.php" data-auth-link>Entrar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div>
+          <span class="eyebrow">Curitiba · PR</span>
+          <h1 id="hero-title">Cuidar da cidade começa por saber onde agir.</h1>
+          <p class="hero__lead">
+            O <strong>EcoSpot + EcoAlert</strong> reúne, em um só lugar, a consulta a pontos
+            sustentáveis e o registro de problemas ambientais na cidade de Curitiba.
+          </p>
+          <div class="btn-group">
+            <a class="btn btn--primary" href="ecospot.html">Conhecer o EcoSpot</a>
+            <a class="btn btn--alert" href="ecoalert.html">Conhecer o EcoAlert</a>
+          </div>
+        </div>
+        <div class="hero__art">
+          <img src="assets/img/hero.svg" alt="" width="400" height="360">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="modulos-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">Dois módulos, um objetivo</span>
+          <h2 id="modulos-title">O que a plataforma oferece</h2>
+          <p>A consulta ao EcoSpot é aberta a todos os visitantes. O registro de ocorrências no EcoAlert será exclusivo para usuários cadastrados.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <article class="card feature-card">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11.5A7 7 0 0 1 19 9.5C19 14.7 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            </div>
+            <h3>EcoSpot</h3>
+            <p>Consulta de pontos sustentáveis no mapa de Curitiba.</p>
+            <ul>
+              <li>Mapa interativo de Curitiba</li>
+              <li>Em breve: pontos de coleta, reciclagem e descarte correto</li>
+              <li>Em breve: busca e filtros por categoria</li>
+            </ul>
+            <a class="btn btn--primary" href="ecospot.html">Ir para o EcoSpot</a>
+          </article>
+
+          <article class="card feature-card feature-card--alert card--alert">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+            </div>
+            <h3>EcoAlert</h3>
+            <p>Registro de problemas ambientais por usuários cadastrados.</p>
+            <ul>
+              <li>Tipos de ocorrência que poderão ser registrados</li>
+              <li>Em breve: registro de ocorrências com localização, mediante login</li>
+              <li>Em breve: acompanhamento das ocorrências registradas</li>
+            </ul>
+            <a class="btn btn--alert" href="ecoalert.html">Ir para o EcoAlert</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="como-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">Como vai funcionar</span>
+          <h2 id="como-title">Da consulta à ação</h2>
+        </div>
+        <ol class="steps grid grid--3">
+          <li class="card">
+            <h3>Consulte</h3>
+            <p>Encontre no EcoSpot onde descartar corretamente ou onde existem iniciativas sustentáveis perto de você.</p>
+          </li>
+          <li class="card">
+            <h3>Observe</h3>
+            <p>Percebeu descarte irregular, entulho ou outro problema ambiental? Anote o local e o tipo de ocorrência.</p>
+          </li>
+          <li class="card">
+            <h3>Registre</h3>
+            <p>Com uma conta cadastrada, registre o problema no EcoAlert e contribua com informações sobre o seu bairro.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="publico-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">Nossa cidade</span>
+          <h2 id="publico-title">Pensado para Curitiba</h2>
+          <p>O EcoSpot + EcoAlert é voltado ao município de Curitiba. As informações reunidas pela plataforma poderão contribuir para o trabalho de órgãos como a Prefeitura Municipal de Curitiba e a Secretaria Municipal do Meio Ambiente (SMMA).</p>
+        </div>
+        <div class="notice" role="note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          <div>
+            <h2 id="status-title" class="visually-hidden">Disponibilidade</h2>
+            <p><strong>Plataforma em desenvolvimento.</strong> O mapa do EcoSpot já pode ser consultado por qualquer visitante. Você já pode <a href="cadastro.php">criar sua conta</a>; em breve, usuários cadastrados poderão registrar ocorrências ambientais no EcoAlert.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <p><strong>EcoSpot + EcoAlert</strong></p>
+          <p>Plataforma de consulta a pontos sustentáveis e registro de problemas ambientais em Curitiba (PR).</p>
+        </div>
+        <nav class="site-footer__nav" aria-label="Navegação do rodapé">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="ecospot.html">EcoSpot</a></li>
+            <li><a href="ecoalert.html">EcoAlert</a></li>
+            <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="site-footer__bottom">© <span data-current-year>2026</span> EcoSpot + EcoAlert · Projeto acadêmico desenvolvido por estudantes da PUCPR. Sem vínculo oficial com a Prefeitura de Curitiba.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+</body>
+</html>
